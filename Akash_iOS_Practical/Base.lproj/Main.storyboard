@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sWu-uu-Zeu">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Akash_iOS_Practical" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="149" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="VvA-o2-Tux">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="149" id="uCd-Hn-fzw" customClass="ProductCell" customModule="Akash_iOS_Practical" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="149"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uCd-Hn-fzw" id="UFR-d4-aRl">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2L-EA-Jtd">
+                                                    <rect key="frame" x="7" y="11" width="307" height="130"/>
+                                                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GPb-p8-npG">
+                                                    <rect key="frame" x="7" y="11" width="130" height="130"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="7S3-Ls-PFb"/>
+                                                        <constraint firstAttribute="height" constant="130" id="Bvc-NA-KH1"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykr-rD-BbO">
+                                                    <rect key="frame" x="143" y="97" width="30" height="30"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="Gep-Va-HCP"/>
+                                                        <constraint firstAttribute="height" constant="31" id="SRe-cQ-xKY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
+                                                    <color key="tintColor" systemColor="systemRedColor"/>
+                                                    <state key="normal" backgroundImage="minus.circle" catalog="system">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="remove_Product_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftQ-Qk-vyI"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lij-jQ-SNR">
+                                                    <rect key="frame" x="197.5" y="97" width="30" height="30"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="NsK-gO-NZt"/>
+                                                        <constraint firstAttribute="height" constant="31" id="S2O-CU-HFE"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
+                                                    <color key="tintColor" systemColor="systemRedColor"/>
+                                                    <state key="normal" backgroundImage="plus.circle" catalog="system">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="add_Product_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t89-Ki-CNA"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone 12 pro" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrR-4v-LTN">
+                                                    <rect key="frame" x="143" y="13" width="161" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="cm5-zv-Oee"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 200" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdp-QS-Gll">
+                                                    <rect key="frame" x="145" y="61" width="47.5" height="27"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="27" id="jZd-n3-d4G"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hg-Hz-JbB">
+                                                    <rect key="frame" x="182" y="103" width="8.5" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="uhG-7I-R6Q"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="14"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Lij-jQ-SNR" firstAttribute="leading" secondItem="0hg-Hz-JbB" secondAttribute="trailing" constant="7" id="3rQ-aR-0Kl"/>
+                                                <constraint firstItem="cdp-QS-Gll" firstAttribute="leading" secondItem="GPb-p8-npG" secondAttribute="trailing" constant="8" symbolic="YES" id="7Bo-Wf-lZ0"/>
+                                                <constraint firstItem="Lij-jQ-SNR" firstAttribute="top" secondItem="UrR-4v-LTN" secondAttribute="bottom" constant="38.5" id="7uV-Bx-GJq"/>
+                                                <constraint firstItem="0hg-Hz-JbB" firstAttribute="top" secondItem="cdp-QS-Gll" secondAttribute="bottom" constant="15" id="8Uc-RR-gxg"/>
+                                                <constraint firstItem="GPb-p8-npG" firstAttribute="leading" secondItem="UFR-d4-aRl" secondAttribute="leading" constant="7" id="Cz4-Jm-jZ1"/>
+                                                <constraint firstItem="GPb-p8-npG" firstAttribute="top" secondItem="UFR-d4-aRl" secondAttribute="top" constant="11" id="HfF-0d-b0S"/>
+                                                <constraint firstItem="c2L-EA-Jtd" firstAttribute="top" secondItem="UFR-d4-aRl" secondAttribute="top" constant="11" id="PtW-Bb-gHd"/>
+                                                <constraint firstItem="cdp-QS-Gll" firstAttribute="top" secondItem="UrR-4v-LTN" secondAttribute="bottom" constant="3" id="Vfj-3s-eUt"/>
+                                                <constraint firstAttribute="trailing" secondItem="c2L-EA-Jtd" secondAttribute="trailing" constant="6" id="XID-Lc-Hzx"/>
+                                                <constraint firstItem="ykr-rD-BbO" firstAttribute="leading" secondItem="GPb-p8-npG" secondAttribute="trailing" constant="6" id="eVz-FP-K2W"/>
+                                                <constraint firstItem="UrR-4v-LTN" firstAttribute="leading" secondItem="GPb-p8-npG" secondAttribute="trailing" constant="6" id="ioq-sT-OsS"/>
+                                                <constraint firstItem="UrR-4v-LTN" firstAttribute="trailing" secondItem="UFR-d4-aRl" secondAttribute="trailingMargin" id="nEg-1t-xnJ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cdp-QS-Gll" secondAttribute="trailing" constant="111.5" id="rSH-AZ-lvR"/>
+                                                <constraint firstAttribute="bottom" secondItem="c2L-EA-Jtd" secondAttribute="bottom" constant="8" id="snC-M7-Gq8"/>
+                                                <constraint firstItem="c2L-EA-Jtd" firstAttribute="leading" secondItem="UFR-d4-aRl" secondAttribute="leading" constant="7" id="utG-WK-QPd"/>
+                                                <constraint firstItem="ykr-rD-BbO" firstAttribute="top" secondItem="cdp-QS-Gll" secondAttribute="bottom" constant="8.5" id="vHt-RK-0M0"/>
+                                                <constraint firstItem="UrR-4v-LTN" firstAttribute="top" secondItem="UFR-d4-aRl" secondAttribute="topMargin" constant="2" id="vTZ-35-lc2"/>
+                                                <constraint firstItem="0hg-Hz-JbB" firstAttribute="leading" secondItem="ykr-rD-BbO" secondAttribute="trailing" constant="9" id="waZ-IV-gIH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="prodImg" destination="GPb-p8-npG" id="0BW-i9-8TW"/>
+                                            <outlet property="prodName" destination="UrR-4v-LTN" id="Y33-64-TaJ"/>
+                                            <outlet property="prodPrice" destination="cdp-QS-Gll" id="7x7-Lv-bcr"/>
+                                            <outlet property="prodQTY" destination="0hg-Hz-JbB" id="XGO-kb-ZZr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="uEZ-5h-OE6"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="v2P-Fe-nVm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VvA-o2-Tux" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9cZ-GY-NCS"/>
+                            <constraint firstItem="VvA-o2-Tux" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VYc-rX-1nc"/>
+                            <constraint firstItem="VvA-o2-Tux" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tBY-xW-It1"/>
+                            <constraint firstItem="VvA-o2-Tux" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="v6S-dI-FVl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NLk-Ha-e3o"/>
+                    <connections>
+                        <outlet property="tblView" destination="VvA-o2-Tux" id="mOC-mE-vId"/>
+                        <segue destination="JBN-xb-19E" kind="show" id="l76-Rf-UnU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="354.375" y="172.18309859154931"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SgR-iV-PJJ">
+            <objects>
+                <navigationController id="sWu-uu-Zeu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OLd-Ud-19d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7Cp-TR-z0c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEI-Hb-j1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-388" y="172"/>
+        </scene>
+        <!--CartVC-->
+        <scene sceneID="Jk5-GY-OHV">
+            <objects>
+                <viewController storyboardIdentifier="CartVC" id="JBN-xb-19E" customClass="CartVC" customModule="Akash_iOS_Practical" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gro-ju-qYf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your cart is empty!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mP0-On-7Kj">
+                                <rect key="frame" x="78" y="264" width="164" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="tvh-Rp-TOa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Pm-pr-Trd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCartCell" rowHeight="100" id="aEm-v4-oI4" customClass="ProductCartCell" customModule="Akash_iOS_Practical" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aEm-v4-oI4" id="jnM-Mh-J1B">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXo-a1-dhi">
+                                                    <rect key="frame" x="7" y="11" width="307" height="80"/>
+                                                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4j6-N9-BNC">
+                                                    <rect key="frame" x="7" y="11" width="80" height="80"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="EPt-qn-eR1"/>
+                                                        <constraint firstAttribute="width" constant="80" id="Xha-F3-XSR"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBv-yp-zHb">
+                                                    <rect key="frame" x="228" y="57" width="30" height="30"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="4vh-fd-ZR8"/>
+                                                        <constraint firstAttribute="width" constant="30" id="jC1-BE-aQL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
+                                                    <color key="tintColor" systemColor="systemRedColor"/>
+                                                    <state key="normal" backgroundImage="minus.circle" catalog="system">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="remove_Product_Action:" destination="JBN-xb-19E" eventType="touchUpInside" id="kum-5u-Gfh"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMQ-aq-TQd">
+                                                    <rect key="frame" x="282.5" y="57" width="30" height="30"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="7m1-aU-2Uz"/>
+                                                        <constraint firstAttribute="height" constant="31" id="lnH-ed-X2F"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
+                                                    <color key="tintColor" systemColor="systemRedColor"/>
+                                                    <state key="normal" backgroundImage="plus.circle" catalog="system">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="add_Product_Action:" destination="JBN-xb-19E" eventType="touchUpInside" id="HJ4-yJ-waL"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone 12 pro" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drk-HC-Si5">
+                                                    <rect key="frame" x="93" y="13" width="161" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="36" id="XYO-7S-srY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 200" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msm-iQ-JbT">
+                                                    <rect key="frame" x="95" y="61" width="47.5" height="27"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="27" id="Ofc-oP-Txk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8f-xc-XsD">
+                                                    <rect key="frame" x="267" y="63" width="8.5" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="dTu-zO-pTw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="14"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="4j6-N9-BNC" firstAttribute="top" secondItem="jnM-Mh-J1B" secondAttribute="top" constant="11" id="1TP-tT-Jzv"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="msm-iQ-JbT" secondAttribute="trailing" constant="161.5" id="7d9-de-djd"/>
+                                                <constraint firstAttribute="trailing" secondItem="mXo-a1-dhi" secondAttribute="trailing" constant="6" id="9S1-hG-5qB"/>
+                                                <constraint firstItem="mXo-a1-dhi" firstAttribute="top" secondItem="jnM-Mh-J1B" secondAttribute="top" constant="11" id="DYT-w8-v0B"/>
+                                                <constraint firstItem="C8f-xc-XsD" firstAttribute="leading" secondItem="xBv-yp-zHb" secondAttribute="trailing" constant="9" id="L2b-0n-MRO"/>
+                                                <constraint firstAttribute="bottom" secondItem="mXo-a1-dhi" secondAttribute="bottom" constant="9" id="QQx-bi-vTU"/>
+                                                <constraint firstItem="drk-HC-Si5" firstAttribute="trailing" secondItem="jnM-Mh-J1B" secondAttribute="trailingMargin" constant="-50" id="UHz-hn-YQ8"/>
+                                                <constraint firstItem="4j6-N9-BNC" firstAttribute="leading" secondItem="jnM-Mh-J1B" secondAttribute="leading" constant="7" id="Woy-TZ-Fb9"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="C8f-xc-XsD" secondAttribute="bottom" constant="9" id="Ykd-wF-8mD"/>
+                                                <constraint firstAttribute="trailing" secondItem="tMQ-aq-TQd" secondAttribute="trailing" constant="7.5" id="Zdj-tf-zFr"/>
+                                                <constraint firstAttribute="bottom" secondItem="tMQ-aq-TQd" secondAttribute="bottom" constant="12.5" id="bEo-YV-KkS"/>
+                                                <constraint firstItem="msm-iQ-JbT" firstAttribute="leading" secondItem="4j6-N9-BNC" secondAttribute="trailing" constant="8" symbolic="YES" id="f4a-Jr-lXo"/>
+                                                <constraint firstItem="drk-HC-Si5" firstAttribute="top" secondItem="jnM-Mh-J1B" secondAttribute="topMargin" constant="2" id="fL2-gL-guz"/>
+                                                <constraint firstItem="tMQ-aq-TQd" firstAttribute="leading" secondItem="C8f-xc-XsD" secondAttribute="trailing" constant="7" id="jU5-A3-ORM"/>
+                                                <constraint firstItem="msm-iQ-JbT" firstAttribute="top" secondItem="drk-HC-Si5" secondAttribute="bottom" constant="12" id="kFB-Nr-CB0"/>
+                                                <constraint firstItem="drk-HC-Si5" firstAttribute="leading" secondItem="4j6-N9-BNC" secondAttribute="trailing" constant="6" id="rXG-ck-bMm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="xBv-yp-zHb" secondAttribute="bottom" constant="1.5" id="tfi-HY-k26"/>
+                                                <constraint firstItem="mXo-a1-dhi" firstAttribute="leading" secondItem="jnM-Mh-J1B" secondAttribute="leading" constant="7" id="zIY-PM-5RD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="prodImg" destination="4j6-N9-BNC" id="kRP-dH-XEL"/>
+                                            <outlet property="prodName" destination="drk-HC-Si5" id="Og7-YW-wbe"/>
+                                            <outlet property="prodPrice" destination="msm-iQ-JbT" id="Wc7-BP-XZO"/>
+                                            <outlet property="prodQTY" destination="C8f-xc-XsD" id="HRx-LU-55K"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JBN-xb-19E" id="Exo-zF-ysy"/>
+                                    <outlet property="delegate" destination="JBN-xb-19E" id="xUe-Sl-4hA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YS9-S1-tF5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YS9-S1-tF5" firstAttribute="trailing" secondItem="mP0-On-7Kj" secondAttribute="trailing" constant="78" id="87U-FP-6Qu"/>
+                            <constraint firstItem="0Pm-pr-Trd" firstAttribute="trailing" secondItem="YS9-S1-tF5" secondAttribute="trailing" id="FY0-XX-e7V"/>
+                            <constraint firstItem="0Pm-pr-Trd" firstAttribute="bottom" secondItem="YS9-S1-tF5" secondAttribute="bottom" id="Y4p-Bg-wlo"/>
+                            <constraint firstItem="0Pm-pr-Trd" firstAttribute="leading" secondItem="YS9-S1-tF5" secondAttribute="leading" id="bcb-Yj-2nF"/>
+                            <constraint firstItem="mP0-On-7Kj" firstAttribute="centerY" secondItem="YS9-S1-tF5" secondAttribute="centerY" constant="-30" id="dse-ds-vZj"/>
+                            <constraint firstItem="0Pm-pr-Trd" firstAttribute="top" secondItem="Gro-ju-qYf" secondAttribute="top" id="g9n-x6-Vh5"/>
+                            <constraint firstItem="mP0-On-7Kj" firstAttribute="leading" secondItem="YS9-S1-tF5" secondAttribute="leading" constant="78" id="kXc-c6-E30"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iIg-kJ-dqv"/>
+                    <connections>
+                        <outlet property="tblView" destination="0Pm-pr-Trd" id="AYv-rk-eiJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IfB-C6-whr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087.5" y="170.07042253521126"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="minus.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

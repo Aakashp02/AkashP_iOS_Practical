@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "apple-iphone-11-black-2-up-236.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "apple-iphone-11-black-2-up-235.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "apple-iphone-11-black-2-up-237.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
